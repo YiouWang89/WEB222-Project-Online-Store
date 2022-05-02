@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <body id="body">
+      <div class="Title">
+        <h1>B e a u t y &nbsp &nbsp &nbsp S t u d i o</h1>
+        <nav>
+          <ul class="Menu">
+            <li id="Home"><a href="./index.html">HOME</a></li>
+            <li id="lipstick"><a>LIPSTICK</a></li>
+            <li id="eyeshadow"><a>EYESHADOW</a></li>
+            <li id="makeuptools"><a>TOOLS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="imagebox">
+        <a class="arror" href="#"><i id="arror1" class="material-icons">keyboard_arrow_left</i></a>
+        <a class="arror" href="#"><i class="material-icons" id="arror2">keyboard_arrow_right</i></a>
+        <div id="picture">
+          <img id="imag1" src="./images/1.jpg" alt="123" />
+        </div>
+      </div>
+      <div id="products">
+        <p id="tagline">Contact &nbsp&nbsp Us </p>
+
+
+        <div id="form">
+        <form name="contact-form" action="https://httpbin.org/post " method="POST" onsubmit="return checkValidation();">
+          <label for="contact-name">Name</label>
+            <input
+            id="contact-name" 
+            type="text" 
+            name="name"
+            autofocus
+            tabindex="1"
+            required>
+
+            <label for="contact-email">Email Address</label>
+            <input
+            id="contact-email" 
+            type="email" 
+            name="email"
+            tabindex="2"
+            required>
+
+            <label for="contact-address">Address</label>
+            <input
+            id="contact-address" 
+            type="text" 
+            name="address"
+            tabindex="3"
+            required>
+
+            <label for="contact-city">City</label>
+            <input
+            id="contact-city" 
+            type="text" 
+            name="city"
+            autocomplete="city"
+            tabindex="4"
+            list="city-list"
+            required>
+            
+            <datalist id="city-list">
+              <option>Toronto</option>
+              <option >Vancouver</option>
+              <option >Montreal</option>
+              <option >Victoria</option>
+              <option >Halifax</option>
+              <option >Quebec City</option>
+              <option >Calgary</option>
+            </datalist>
+
+            <label for="contact-postcode">Post Code</label>
+            <input
+            id="contact-postcode" 
+            type="text" 
+            name="postcode"
+            tabindex="5"
+            placeholder="M5H 3H1"
+            >
+            <small class="ErrorMessage"><span id = "PostcodeErrorMessage" class="ErrorMessage"></span></small>
+
+          <div id="About">
+            <label for="about">About</label>
+            <input
+            id="contact-About1" 
+            type="radio" 
+            name="about"
+            tabindex="6"
+            value="about1"
+            checked
+            >Question
+            <input
+            id="contact-About2" 
+            type="radio" 
+            name="about"
+            value="about2"
+            >Comment
+            <input
+            id="contact-About3" 
+            type="radio" 
+            name="about"
+            value="about3"
+            >Order Problem
+            <div id="ordernumber">
+              <label for="orderNumber">Order Number</label>
+              <input type="text" name="ordernumber" id="orderNumber">
+            </div>
+            <textarea name="question" id="question" cols="30" rows="10" required>What we can help you?</textarea>
+            <input type="hidden" name="authorName" value="Yiou(Anna) Wang">
+        </div>
+        <div class="buttons">
+          <input id="submit" type="submit" value="Submit">
+          <input type="reset" value="Clear"> 
+        </div>     
+        </form>
+ 
+      </div>
+        
+      </div>
+  </body>
+  <footer>
+    <div id="foot">
+      <h5>N E E D &nbsp&nbsp H E L P?</h5>
+      <p class="help"><a href="./contact.html" id="contact">Contact Us</a></p>
+      <p class="help">Call Us +1 123-456-7890</p>
+      <p class="help">Shipping & Return</p>
+      <p id="follow">F O L L O W &nbsp&nbsp U S</p>
+
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <form action="https://formspree.io/f/xoqpkaer" method="POST">
+        <input id="Subscribe" type="email" name="emial" placeholder="Your Email Address" />
+        <input id="Subbutton" type="submit" value="Subscribe" />
+      </form>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,20 @@
+
+> assignment5@1.3.0 eslint /Volumes/Untitled/Seneca/Semaster2/WEB222/assignment5
+> eslint src/**/*.js
+
+
+/Volumes/Untitled/Seneca/Semaster2/WEB222/assignment5/src/script.js
+  228:10  error  'checkValidation' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! assignment5@1.3.0 eslint: `eslint src/**/*.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the assignment5@1.3.0 eslint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/anna/.npm/_logs/2020-12-09T22_59_31_364Z-debug.log
